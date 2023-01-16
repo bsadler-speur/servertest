@@ -16,5 +16,5 @@ app.post("/submit",(req,res)=>{
 })
 
 app.get("/",(req,res) => {
-    res.send("Listening")
+    res.send("<html><header>Listening </header></html>")
 })
