@@ -11,10 +11,10 @@ app.listen(PORT,() =>{
 
 app.post("/submit",(req,res)=>{
     console.log(req)
-    return req.json();
+    res.send(req.json())
 
 })
 
 app.get("/",(req,res) => {
-    console.log("Listening")
+    res.send("Listening")
 })
