@@ -11,7 +11,7 @@ app.listen(PORT,() =>{
 
 app.post("/submit",(req,res)=>{
     console.log(req)
-    res.send(req.body)
+    res.send(req)
 
 })
 
