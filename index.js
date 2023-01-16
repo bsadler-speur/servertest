@@ -11,3 +11,7 @@ app.listen(PORT,() =>{
 app.post("/submit",(req,res)=>{
     console.log(res)
 })
+
+app.get("/",(req,res) => {
+    console.log("Listening ")
+})
