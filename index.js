@@ -14,7 +14,7 @@ app.post("/submit",(req,res)=>{
     console.log("Headers",req.headers)
     console.log("Request",req)
 
-    res.send(req.params)
+    res.send(req)
 
 })
 
