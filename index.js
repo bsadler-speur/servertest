@@ -3,15 +3,18 @@ const app = express();
 
 const PORT = process.env.PORT || 8080
 
-app.use(express.json())
+app.use(express.json)
 
 app.listen(PORT,() =>{
     console.log("Server is running")
 });
 
 app.post("/submit",(req,res)=>{
-    console.log(req)
-    res.send(req)
+    console.log("Body",req.body)
+    console.log("Params",req.params)
+    console.log("Headers",req.headers)
+
+    res.send(req.body)
 
 })
 
