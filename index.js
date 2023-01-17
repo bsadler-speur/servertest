@@ -12,9 +12,9 @@ app.post("/submit",(req,res)=>{
     console.log("Body",req.body)
     console.log("Params",req.params)
     console.log("Headers",req.headers)
-    console.log("Request",req)
+    console.log("Request",json_encode(req))
 
-    res.send(req)
+    res.send(json_encode(req))
 
 })
 
